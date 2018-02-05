@@ -13,7 +13,7 @@ Trello:
 https://trello.com/b/zv9mDCYP/project-1
 
 BitBalloon:
-https://www.bitballoon.com/sites/awesome-franklin-94d5f5
+https://awesome-franklin-94d5f5.bitballoon.com
 
 Wireframe:
 https://imgur.com/Pepdv7V
