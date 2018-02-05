@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+	margin: 0;
+}
+
+header {
+    background-color: black;
+    margin: 35px auto;
+    height: 100px;
+}
+
+main {
+	width: 850px;
+	margin: 35px auto;
+}
+
+footer {
+    background-color: black;
+    margin: 35px auto;
+    height: 75px;
+}
+
+.copyright {
+    color: white;
+    padding: 10px;
+}
+
+img {
+    margin: 40px 0px 8px 8px;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    font-size: 64px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 48px;
+}
+
+p {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 30px;
+    padding: 5px;
+}
