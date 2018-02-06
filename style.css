@@ -6,7 +6,7 @@ body {
 header {
     background-color: black;
     margin: 35px auto;
-    height: 150px;
+    height: 200px;
 }
 
 main {
@@ -21,8 +21,17 @@ footer {
 }
 
 .copyright {
-    color: white;
+    color: gold;
+    font-family: 'Sigmar One', cursive;
     padding: 10px;
+}
+
+#letterboard {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(221, 221, 221);
+    margin: 10% auto;
 }
 
 img {
@@ -44,7 +53,14 @@ h2 {
 }
 
 p {
+    width: 90%;
+    margin: 10% auto;
     font-family: 'Just Another Hand', cursive;
     font-size: 18px;
-    padding: 5px;
+    border-radius: 5px;
+}
+
+a {
+    font-family: 'Ewert', cursive;
+    font-size: 32px;
 }
