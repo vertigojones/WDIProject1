@@ -6,7 +6,7 @@ body {
 header {
     background-color: black;
     margin: 35px auto;
-    height: 100px;
+    height: 150px;
 }
 
 main {
@@ -30,21 +30,21 @@ img {
 }
 
 h1 {
-    font-family: 'Indie Flower', cursive;
-    color: white;
-    font-size: 64px;
+    font-family: 'Ewert', cursive;
+    color: gold;
+    font-size: 98px;
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 h2 {
-    font-family: 'Indie Flower', cursive;
-    font-size: 48px;
+    font-family: 'Sigmar One', cursive;
+    font-size: 32px;
 }
 
 p {
     font-family: 'Just Another Hand', cursive;
-    font-size: 30px;
+    font-size: 18px;
     padding: 5px;
 }

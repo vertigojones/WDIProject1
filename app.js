@@ -1,3 +1,4 @@
+/*
 //Pseudocode for the game "Hang Trump"
 
 //an array of words to be used
@@ -46,3 +47,4 @@ while (remainingLetters > 0) {
 
 alert(answerArray.join(" "));
 alert("You're hired! You guessed that my super-duper smart word is " + randomWord + "!");
+*/
