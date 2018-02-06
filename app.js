@@ -1,5 +1,5 @@
 //assign letters as 
-
+/*
 window.onload = function() {
     let a = document.querySelector('#a');
     let b = document.querySelector('#b');
@@ -27,7 +27,7 @@ window.onload = function() {
     let y = document.querySelector('#y');
     let z = document.querySelector('#z');
 }
-
+*/
 //Pseudocode for the game "Trumpisms"
 
 //an array of words to be used
@@ -50,7 +50,7 @@ let remainingLetters = randomWord.length;
 
 //if there are remining letters
 while (remainingLetters > 0) {
-    alert("This is how many letters remain in my super smart word:\n" + answerArray.join(" "));
+    $(`#input`).append("These are the letters that remain in my super smart word:\n" + answerArray.join(" "));
 
     //game begins
     //ask player to input a letter
@@ -76,5 +76,9 @@ while (remainingLetters > 0) {
 
 alert(answerArray.join(" "));
 alert("You're hired! You guessed that my super-duper smart word is " + randomWord + "!");
-
-
+/*
+$(`.button`).click((target)=> {
+    let value = target.target.id
+    
+})
+*/

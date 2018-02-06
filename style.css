@@ -38,6 +38,13 @@ footer {
     margin: 10% auto;
 }
 
+#input {
+    font-family: 'Sigmar One', cursive;
+    font-size: 32px;
+    padding: 10px;
+
+}
+
 #letters a {
     color: black;
     background-color: white;
