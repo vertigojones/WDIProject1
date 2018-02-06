@@ -1,5 +1,32 @@
-/*
-//Pseudocode for the game "Hang Trump"
+//assign letters as 
+window.onload = function() {
+    let a = document.querySelector('#a');
+    let b = document.querySelector('#b');
+    let c = document.querySelector('#c');
+    let d = document.querySelector('#d');
+    let e = document.querySelector('#e');
+    let f = document.querySelector('#f');
+    let g = document.querySelector('#g');
+    let h = document.querySelector('#h');
+    let i = document.querySelector('#i');
+    let j = document.querySelector('#j');
+    let k = document.querySelector('#k');
+    let l = document.querySelector('#l');
+    let m = document.querySelector('#n');
+    let o = document.querySelector('#o');
+    let p = document.querySelector('#p');
+    let q = document.querySelector('#q');
+    let r = document.querySelector('#r');
+    let s = document.querySelector('#s');
+    let t = document.querySelector('#t');
+    let u = document.querySelector('#u');
+    let v = document.querySelector('#v');
+    let w = document.querySelector('#w');
+    let x = document.querySelector('#x');
+    let y = document.querySelector('#y');
+    let z = document.querySelector('#z');
+}
+//Pseudocode for the game "Trumpisms"
 
 //an array of words to be used
 const words = ['covfefe', 'bigly', 'ombre', 'Nambia', 'misogyny', 'complicit', 'braggadocio'];
@@ -21,7 +48,7 @@ let remainingLetters = randomWord.length;
 
 //if there are remining letters
 while (remainingLetters > 0) {
-    alert("This is how many letters remain in my super smart word:\n" + answerArray.join(" "));
+    ("This is how many letters remain in my super smart word:\n" + answerArray.join(" "));
 
     //game begins
     //ask player to input a letter
@@ -47,4 +74,5 @@ while (remainingLetters > 0) {
 
 alert(answerArray.join(" "));
 alert("You're hired! You guessed that my super-duper smart word is " + randomWord + "!");
-*/
+
+
