@@ -42,7 +42,12 @@ footer {
     font-family: 'Sigmar One', cursive;
     font-size: 32px;
     padding: 10px;
+}
 
+#comments {
+    font-family: 'Sigmar One', cursive;
+    font-size: 24px;
+    padding: 10px;
 }
 
 #letters a {
