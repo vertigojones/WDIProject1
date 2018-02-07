@@ -4,7 +4,7 @@ const words = ['COVFEFE', 'BIGLY', 'OMBRE', 'NAMBIA', 'MISOGYNY', 'COMPLICIT', '
 let randomWord = words[Math.floor(Math.random() * words.length)];
 
 //compliments to be returned for correct answer
-const compliments = ["You have a smart brain!", "You should work for Fox News!", "Great going!", "Very powerful, very strong. Keep going!", "Just superb!", "Are you from Russia"]
+const compliments = ["You have a smart brain!", "You should work for Fox News!", "Great going!", "Very powerful, very strong. Keep going!", "Just superb!", "Are you from Russia"];
 
 //insults to be returned for wrong guesses
 const responses = ["If only you had an IQ as high as me. Dummy. Try again!", "So sad!", "Do you come from a s**thole or something?", "LOSER!!!", "Horrible job!", "Did you graduate last in your class?", "Hokey garbage...", "What a dope!"];
@@ -35,6 +35,7 @@ $(`.button`).click(function (guess) {
             $(`#input`).text("These are the letters that remain in my super smart word:\n" + answerArray.join(" "));
             $(`#comments`).delay(800).text(compliments[Math.floor(Math.random() * compliments.length)]);
             remainingLetters--;
+            break;
         }
         //wrong guess, return random insult
         else if (j == randomWord.length) {
