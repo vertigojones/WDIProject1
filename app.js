@@ -19,18 +19,18 @@ for (let i = 0; i < randomWord.length; i++) {
 //check for remaining letters
 let remainingLetters = randomWord.length;
 
-
 //reveal array in browser
 $(`#input`).text("These are the letters that remain in my super smart word:\n " + answerArray.join(" "));
 
 //game begins
 //player guesses a letter by clicking letter button
 $(`.button`).click(function (guess) {
-    let value = guess.target.id;
+    let value = guess.target.innerText;
     //disable button 
     $(event.target).off();
     //assign disabled css
     $(event.target).css({"color": "red", "text-decoration": "line-through"});
+    console.log(value)
     
     //check through letters of word
     for (let j = 0; j <= randomWord.length; j++) {
@@ -46,5 +46,5 @@ $(`.button`).click(function (guess) {
         else if (j == randomWord.length) {
             $(`#comments`).delay(800).text(responses[Math.floor(Math.random() * responses.length)]);
         }
-    }
+    }    
 });
