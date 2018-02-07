@@ -30,7 +30,7 @@ $(`.button`).click(function (guess) {
     $(event.target).off();
     //assign disabled css
     $(event.target).css({"color": "red", "text-decoration": "line-through"});
-    console.log(value)
+    console.log(value);
     
     //check through letters of word
     for (let j = 0; j <= randomWord.length; j++) {
@@ -40,7 +40,6 @@ $(`.button`).click(function (guess) {
             $(`#input`).text("These are the letters that remain in my super smart word:\n" + answerArray.join(" "));
             $(`#comments`).delay(800).text(compliments[Math.floor(Math.random() * compliments.length)]);
             remainingLetters--;
-            break;
         }
         //wrong guess, return random insult
         else if (j == randomWord.length) {
