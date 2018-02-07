@@ -4,7 +4,7 @@ const words = ['COVFEFE', 'BIGLY', 'OMBRE', 'NAMBIA', 'MISOGYNY', 'COMPLICIT', '
 let randomWord = words[Math.floor(Math.random() * words.length)];
 
 //compliments to be returned for correct answer
-const compliments = ["You have a smart brain!", "You should work for Fox News!", "Great going!", "Very powerful, very strong. Keep going!", "Just superb!", "Are you from Russia"];
+const compliments = ["You have a smart brain!", "You should work for Fox News!", "Great going!", "Very powerful, very strong. Keep going!", "Just superb!", "Nice. Are you from Russia?"];
 
 //insults to be returned for wrong guesses
 const responses = ["If only you had an IQ as high as me. Dummy. Try again!", "So sad!", "Do you come from a s**thole or something?", "LOSER!!!", "Horrible job!", "Did you graduate last in your class?", "Hokey garbage...", "What a dope!"];
@@ -26,7 +26,12 @@ $(`#input`).text("These are the letters that remain in my super smart word:\n " 
 //game begins
 //player guesses a letter by clicking letter button
 $(`.button`).click(function (guess) {
-    let value = guess.target.innerText;
+    let value = guess.target.id;
+    //disable button 
+    $(event.target).off();
+    //assign disabled css
+    $(event.target).css({"color": "red", "text-decoration": "line-through"});
+    
     //check through letters of word
     for (let j = 0; j <= randomWord.length; j++) {
         //correct guess, return random compliment and reveal letters in array
@@ -39,7 +44,7 @@ $(`.button`).click(function (guess) {
         }
         //wrong guess, return random insult
         else if (j == randomWord.length) {
-                $(`#comments`).delay(800).text(responses[Math.floor(Math.random() * responses.length)]);
-        }       
+            $(`#comments`).delay(800).text(responses[Math.floor(Math.random() * responses.length)]);
+        }
     }
-})
+});
