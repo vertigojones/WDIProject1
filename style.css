@@ -18,7 +18,7 @@ footer {
 	padding: 10px 10px;
 	background-color: black;
 	color: gold;
-	font-size: 14px;
+	font-size: 14px !important;
 	letter-spacing: .08em;
 	font-weight: 500;
 }
@@ -27,6 +27,7 @@ footer {
     color: gold;
     background-color: black;
     font-family: 'Sigmar One', cursive;
+    font-size: 24px;
 }
 
 #letterboard {
@@ -76,8 +77,6 @@ h1 {
     color: gold;
     font-size: 98px;
     text-transform: uppercase;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 h2 {
@@ -89,8 +88,9 @@ p {
     width: 90%;
     margin: auto;
     font-family: 'Just Another Hand', cursive;
-    font-size: 18px;
+    font-size: 32px;
     border-radius: 5px;
+    padding-bottom: 15px;
 }
 
 a {
