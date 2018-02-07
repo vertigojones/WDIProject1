@@ -15,8 +15,7 @@ main {
 
 footer {
 	text-transform: uppercase;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 10px 10px;
 	background-color: black;
 	color: gold;
 	font-size: 14px;
@@ -26,28 +25,29 @@ footer {
 
 .copyright {
     color: gold;
+    background-color: black;
     font-family: 'Sigmar One', cursive;
-    padding: 10px;
 }
 
 #letterboard {
     width: 50%;
     border-radius: 5px;
     padding: 15px;
-    background-color: rgb(221, 221, 221);
-    margin: 10% auto;
+    background-color: rgb(179, 179, 179);
+    margin: 5% auto;
 }
 
 #input {
     font-family: 'Sigmar One', cursive;
     font-size: 32px;
-    padding: 10px;
+    padding: 15px;
 }
 
 #comments {
     font-family: 'Sigmar One', cursive;
     font-size: 24px;
     padding: 10px;
+    height: 25px;
 }
 
 #letters a {
@@ -87,7 +87,7 @@ h2 {
 
 p {
     width: 90%;
-    margin: 10% auto;
+    margin: auto;
     font-family: 'Just Another Hand', cursive;
     font-size: 18px;
     border-radius: 5px;
