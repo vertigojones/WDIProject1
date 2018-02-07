@@ -9,6 +9,9 @@ const compliments = ["You have a smart brain!", "You should work for Fox News!",
 //insults to be returned for wrong guesses
 const responses = ["If only you had an IQ as high as me. Dummy. Try again!", "So sad!", "Do you come from a s**thole or something?", "LOSER!!!", "Horrible job!", "Did you graduate last in your class?", "Hokey garbage...", "What a dope!"];
 
+//define maximum number of attempts
+let attempts = 6;
+
 //turn the word into a series of individual characters
 let answerArray = [];
 for (let i = 0; i < randomWord.length; i++) {
@@ -31,19 +34,22 @@ $(`.button`).click(function (guess) {
     //assign disabled css
     $(event.target).css({"color": "red", "text-decoration": "line-through"});
     console.log(value);
-    
+    let count = 0;
     //check through letters of word
     for (let j = 0; j <= randomWord.length; j++) {
-        //correct guess, return random compliment and reveal letters in array
+    
+        //correct guess, return random compliment and update letters in array
         if (randomWord[j] === value) {
             answerArray[j] = value;
             $(`#input`).text("These are the letters that remain in my super smart word:\n" + answerArray.join(" "));
             $(`#comments`).delay(800).text(compliments[Math.floor(Math.random() * compliments.length)]);
-            remainingLetters--;
+            remainingLetters--;  
+            count++        
         }
         //wrong guess, return random insult
-        else if (j == randomWord.length) {
-            $(`#comments`).delay(800).text(responses[Math.floor(Math.random() * responses.length)]);
-        }
     }    
+    if (count === 0){
+            $(`#comments`).delay(800).text(responses[Math.floor(Math.random() * responses.length)]); 
+            attempts--;      
+    }
 });
