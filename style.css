@@ -21,7 +21,7 @@ footer {
 	color: gold;
 	font-size: 14px !important;
 	letter-spacing: .08em;
-	font-weight: 500;
+    font-weight: 500;
 }
 
 .copyright {
@@ -35,8 +35,9 @@ footer {
     width: 50%;
     border-radius: 5px;
     padding: 15px;
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(197, 196, 196);
     margin: 5% auto;
+    border: 5px solid black;
 }
 
 #input {
@@ -73,7 +74,7 @@ footer {
 
 #donald {
     margin: 30px 8px;
-    height: 400px;
+    height: 420px;
     width: auto; 
     border: 10px solid gold;
        

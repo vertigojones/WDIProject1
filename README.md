@@ -38,3 +38,10 @@ jQuery:
 https://jquery.com/
 
 
+Version 2.0:
+
+Make frame more "Trumpish" by adding a gaudy frame to the main image.
+Maybe add some extra graphics with money, gold images.
+Add more "Trumpisms™" to the word array.
+Add more compliments/insults to the comments arrays.
+
