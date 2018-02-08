@@ -61,6 +61,7 @@ $(`.button`).click(function (guess) {
             remainingLetters--;
             count++
         }
+    //call the end of game for a win
     } if (remainingLetters === 0) {
         endGame(false)
     }
@@ -69,7 +70,6 @@ $(`.button`).click(function (guess) {
     if (count === 0) {
         $(`#comments`).delay(800).text(insults[Math.floor(Math.random() * insults.length)]);
         lives--;
-        console.log(lives)
     }
     //assign lives to images
     if (lives === 5) {
@@ -84,6 +84,7 @@ $(`.button`).click(function (guess) {
         $(`#noose`).attr("src", "https://i.imgur.com/ZdTKiSmm.jpg");
     } else if (lives === 0) {
         $(`#noose`).attr("src", "https://i.imgur.com/cYh7sVvm.jpg");
+        //call the end of game for a loss
         endGame(true);
     }
 });
