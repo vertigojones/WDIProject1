@@ -88,3 +88,9 @@ $(`.button`).click(function (guess) {
         endGame(true);
     }
 });
+
+$(document).ready(function () {
+    $('#reset-button').click(function () { 
+        location.reload(true); 
+    });
+});
