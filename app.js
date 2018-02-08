@@ -31,12 +31,12 @@ function endGame(lose) {
     if (lose) {
         //disable all letter buttons and fire the player
         $(`.button`).off();
-        $(`#comments`).text("YOU'RE FIRED!!!").css({"color": "red"});
+        $(`#comments`).text("YOU'RE FIRED!!!").css({ "color": "red" });
         //if player wins
     } else {
         //disable all letter buttons and hire the player
         $(`.button`).off();
-        $(`#comments`).text("CONGRATULATIONS! YOU'RE HIRED!!!").css({"color": "green"});
+        $(`#comments`).text("CONGRATULATIONS! YOU'RE HIRED!!!").css({ "color": "green" });
     }
 }
 
@@ -47,7 +47,7 @@ $(`.button`).click(function (guess) {
     //disable button 
     $(event.target).off();
     //assign disabled css
-    $(event.target).css({"color": "red", "text-decoration": "line-through"});
+    $(event.target).css({ "color": "red", "text-decoration": "line-through" });
 
     let count = 0;
     //check through letters of word
@@ -73,17 +73,17 @@ $(`.button`).click(function (guess) {
     }
     //assign lives to images
     if (lives === 5) {
-        $(`#noose`).attr("src", "https://i.imgur.com/9OxHKuWm.jpg");
+        $(`#donald`).attr("src", "https://i.imgur.com/LanZkjkm.jpg");
     } else if (lives === 4) {
-        $(`#noose`).attr("src", "https://i.imgur.com/ELc7qBNm.jpg");
+        $(`#donald`).attr("src", "https://i.imgur.com/IdH0xdKm.jpg");
     } else if (lives === 3) {
-        $(`#noose`).attr("src", "https://i.imgur.com/zmz6xfRm.jpg");
+        $(`#donald`).attr("src", "https://i.imgur.com/pjMOIZgm.jpg");
     } else if (lives === 2) {
-        $(`#noose`).attr("src", "https://i.imgur.com/ALBQgzHm.jpg");
+        $(`#donald`).attr("src", "https://i.imgur.com/DoyBkIcm.jpg");
     } else if (lives === 1) {
-        $(`#noose`).attr("src", "https://i.imgur.com/ZdTKiSmm.jpg");
+        $(`#donald`).attr("src", "https://i.imgur.com/wCQvIVkm.jpg");
     } else if (lives === 0) {
-        $(`#noose`).attr("src", "https://i.imgur.com/cYh7sVvm.jpg");
+        $(`#donald`).attr("src", "https://i.imgur.com/wSN3ltFm.jpg");
         //call the end of game for a loss
         endGame(true);
     }
