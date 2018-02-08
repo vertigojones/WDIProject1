@@ -63,7 +63,14 @@ footer {
     color: green;   
 }
 
-img {
+#reset-button {
+    height: 80px;
+    width: auto;
+    margin: 40px 10px 10px 10px;
+    cursor: pointer;
+}
+
+#donald {
     margin: 30px 8px;
     height: 400px;
     width: auto; 
