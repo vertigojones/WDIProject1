@@ -89,6 +89,7 @@ $(`.button`).click(function (guess) {
     }
 });
 
+//make reset image clickable and reload page
 $(document).ready(function () {
     $('#reset-button').click(function () { 
         location.reload(true); 
