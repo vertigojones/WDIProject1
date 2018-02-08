@@ -73,17 +73,17 @@ $(`.button`).click(function (guess) {
     }
     //assign lives to images
     if (lives === 5) {
-        $(`#donald`).attr("src", "https://i.imgur.com/LanZkjkm.jpg");
+        $(`#donald`).attr("src", "images/Donald_Trump6.jpg", "alt", "5 lives left");
     } else if (lives === 4) {
-        $(`#donald`).attr("src", "https://i.imgur.com/IdH0xdKm.jpg");
+        $(`#donald`).attr("src", "images/Donald_Trump5.jpg", "alt", "4 lives left");
     } else if (lives === 3) {
-        $(`#donald`).attr("src", "https://i.imgur.com/pjMOIZgm.jpg");
+        $(`#donald`).attr("src", "images/Donald_Trump4.jpg", "alt", "3 lives left");
     } else if (lives === 2) {
-        $(`#donald`).attr("src", "https://i.imgur.com/DoyBkIcm.jpg");
+        $(`#donald`).attr("src", "images/Donald_Trump3.jpg", "alt", "2 lives left");
     } else if (lives === 1) {
-        $(`#donald`).attr("src", "https://i.imgur.com/wCQvIVkm.jpg");
+        $(`#donald`).attr("src", "images/Donald_Trump2.jpg", "alt", "1 lives left");
     } else if (lives === 0) {
-        $(`#donald`).attr("src", "https://i.imgur.com/wSN3ltFm.jpg");
+        $(`#donald`).attr("src", "images/Donald_Trump1.jpg", "alt", "Game over");
         //call the end of game for a loss
         endGame(true);
     }
