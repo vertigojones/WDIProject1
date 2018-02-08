@@ -2,16 +2,15 @@ body {
     text-align: center;
     margin: 0;
 }
-
-header {
-    background-color: black;
-    padding: 30px 20px;
-    width: 100vw;
-}
-
 main {
 	width: 850px;
 	margin: 35px auto;
+}
+
+header {
+    background-color: black;
+    padding: 25px 20px;
+    width: 100vw;
 }
 
 footer {
@@ -19,9 +18,9 @@ footer {
 	padding: 10px 10px;
 	background-color: black;
 	color: gold;
-	font-size: 14px !important;
 	letter-spacing: .08em;
     font-weight: 500;
+    width: 100vw;
 }
 
 .copyright {
@@ -93,11 +92,10 @@ h2 {
 }
 
 p {
-    width: 90%;
+    width: 100%;
     margin: auto;
     font-family: 'Just Another Hand', cursive;
-    font-size: 32px;
-    border-radius: 5px;
+    font-size: 28px;
     padding-bottom: 15px;
 }
 
