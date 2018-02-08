@@ -9,9 +9,8 @@ const compliments = ["You have a smart brain!", "You should work for Fox News!",
 //insults to be returned for wrong guesses
 const insults = ["If only you had an IQ as high as me. Dummy. Try again!", "So sad!", "Do you come from a s**thole or something?", "LOSER!!!", "Horrible job!", "Did you graduate last in your class?", "Hokey garbage...", "What a dope!"];
 
-//define maximum number of attempts and assign first image to page
+//define maximum number of attempts
 let lives = 6;
-//$("#image-container").attr("src", "images/hangman1.jpg");
 
 //turn the word into a series of individual characters
 let answerArray = [];
@@ -26,6 +25,21 @@ let remainingLetters = randomWord.length;
 //reveal array in browser
 $(`#input`).text("These are the letters that remain in my super smart word:\n " + answerArray.join(" "));
 
+//create a function for end of game
+function endGame(lose) {
+    //if player loses
+    if (lose) {
+        //disable all letter buttons and fire the player
+        $(`.button`).off();
+        $(`#comments`).text("YOU'RE FIRED!!!").css({"color": "green"});
+        //if player wins
+    } else {
+        //disable all letter buttons and hire the player
+        $(`.button`).off();
+        $(`#comments`).text("CONGRATULATIONS! YOU'RE HIRED!!!").css({"color": "green"});
+    }
+}
+
 //game begins
 //player guesses a letter by clicking letter button
 $(`.button`).click(function (guess) {
@@ -33,7 +47,7 @@ $(`.button`).click(function (guess) {
     //disable button 
     $(event.target).off();
     //assign disabled css
-    $(event.target).css({ "color": "red", "text-decoration": "line-through" });
+    $(event.target).css({"color": "red", "text-decoration": "line-through"});
 
     let count = 0;
     //check through letters of word
@@ -47,12 +61,15 @@ $(`.button`).click(function (guess) {
             remainingLetters--;
             count++
         }
+    } if (remainingLetters === 0) {
+        endGame(false)
     }
+
     //wrong guess, return random insult and deduct one life
     if (count === 0) {
         $(`#comments`).delay(800).text(insults[Math.floor(Math.random() * insults.length)]);
-        lives--;   
-        console.log(lives) 
+        lives--;
+        console.log(lives)
     }
     //assign lives to images
     if (lives === 5) {
@@ -67,5 +84,6 @@ $(`.button`).click(function (guess) {
         $(`#noose`).attr("src", "https://i.imgur.com/ZdTKiSmm.jpg");
     } else if (lives === 0) {
         $(`#noose`).attr("src", "https://i.imgur.com/cYh7sVvm.jpg");
-    } 
+        endGame(true);
+    }
 });
