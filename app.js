@@ -31,7 +31,7 @@ function endGame(lose) {
     if (lose) {
         //disable all letter buttons and fire the player
         $(`.button`).off();
-        $(`#comments`).text("YOU'RE FIRED!!!").css({"color": "green"});
+        $(`#comments`).text("YOU'RE FIRED!!!").css({"color": "red"});
         //if player wins
     } else {
         //disable all letter buttons and hire the player
